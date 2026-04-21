@@ -1,0 +1,102 @@
+@use '../../styles/tokens' as *;
+
+.card {
+  padding-top: $spacing-article-pt;
+  padding-bottom: $spacing-article-pb;
+  border-bottom: 1px solid $color-divider;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-article-gap;
+
+  &:active .title {
+    opacity: 0.7;
+  }
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: $spacing-meta-gap;
+}
+
+.publisher {
+  font-size: $font-size-meta;
+  font-weight: $font-weight-meta-bold;
+  color: $color-text-publisher;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.time {
+  font-size: $font-size-meta;
+  font-weight: $font-weight-meta-regular;
+  color: $color-text-meta;
+
+  &::before {
+    content: '·';
+    margin-right: $spacing-meta-gap;
+  }
+}
+
+.body {
+  display: flex;
+  align-items: flex-start;
+  gap: $spacing-article-gap;
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title {
+  font-size: $font-size-article-title;
+  font-weight: $font-weight-article-title;
+  line-height: $line-height-article-title;
+  color: $color-text-primary;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.description {
+  font-size: $font-size-article-desc;
+  font-weight: $font-weight-article-desc;
+  line-height: $line-height-article-desc;
+  color: $color-text-meta;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.thumbnail {
+  width: $thumbnail-size;
+  height: $thumbnail-size;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: $color-bg-thumbnail;
+  border-radius: 8px;
+}

@@ -1,0 +1,37 @@
+@use 'tokens' as *;
+@use 'reset';
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-article-desc;
+  color: $color-text-primary;
+  background-color: $color-bg-phone;
+}
+
+// Desktop: center phone frame on dark background
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  #root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+}
+
+// Mobile: full screen, no phone chrome
+@media (max-width: 767px) {
+  body {
+    background-color: $color-bg-screen;
+  }
+}

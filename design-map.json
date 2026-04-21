@@ -1,0 +1,303 @@
+{
+  "$schema": "https://design-map.schema/v1",
+  "meta": {
+    "version": "1.0.0",
+    "description": "Design token map for FORKED Simple Design System — generated from live Figma variables and styles",
+    "source": "figma",
+    "figmaFileId": "e2JTB9Amzu8JSWyBeCeFvz",
+    "figmaFileName": "FORKED Simple Design System (Community)",
+    "lastSynced": "2026-04-20"
+  },
+
+  "tokens": {
+
+    "color": {
+
+      "$note": "Two-tier system: Color Primitives (raw palette, single mode) → Color (semantic aliases, SDS Light + SDS Dark modes)",
+
+      "primitives": {
+        "$figmaCollection": "Color Primitives",
+        "$figmaMode": "Value",
+        "slate":  {
+          "100":  { "$type": "color", "$figmaVariable": "Slate/100",  "$figmaVariableKey": "ef8d40a53efde3d89bb847052f482375c13eaeb2",  "$cssVar": "--sds-slate-100" },
+          "200":  { "$type": "color", "$figmaVariable": "Slate/200",  "$figmaVariableKey": "5107042fade477fd5bc73d054e0bc8a088fa0f28",  "$cssVar": "--sds-slate-200" },
+          "300":  { "$type": "color", "$figmaVariable": "Slate/300",  "$figmaVariableKey": "e9656c8e8803f9c4cf94286470c2170997bb5093",  "$cssVar": "--sds-slate-300" },
+          "400":  { "$type": "color", "$figmaVariable": "Slate/400",  "$figmaVariableKey": "38402cd4e67b3b3e02188e2c658c23f9cfe459c4",  "$cssVar": "--sds-slate-400" },
+          "500":  { "$type": "color", "$figmaVariable": "Slate/500",  "$figmaVariableKey": "f186bd1801e5f084c5636dbd0d3268d556d428a5",  "$cssVar": "--sds-slate-500" },
+          "600":  { "$type": "color", "$figmaVariable": "Slate/600",  "$figmaVariableKey": "188d9a39dbf5dd2e52edc4daa751c2a850f43d30",  "$cssVar": "--sds-slate-600" },
+          "700":  { "$type": "color", "$figmaVariable": "Slate/700",  "$figmaVariableKey": "42c053f0d0b9df507a5e3f0f79b38249d40c5a47",  "$cssVar": "--sds-slate-700" },
+          "800":  { "$type": "color", "$figmaVariable": "Slate/800",  "$figmaVariableKey": "02f70798a7d8b5cc1cd707245dcd1d412cdd5e03",  "$cssVar": "--sds-slate-800" },
+          "900":  { "$type": "color", "$figmaVariable": "Slate/900",  "$figmaVariableKey": "1783fa181434ace2c1accd71bdf2893db3b72f8a",  "$cssVar": "--sds-slate-900" },
+          "1000": { "$type": "color", "$figmaVariable": "Slate/1000", "$figmaVariableKey": "8b24312d2404d198452da061ab2d8788cf54ce36", "$cssVar": "--sds-slate-1000" }
+        },
+        "brand": {
+          "100":  { "$type": "color", "$figmaVariable": "Brand/100",  "$figmaVariableKey": "5eec64b386ac64cb448b18fb4419dbeee63d4b40",  "$cssVar": "--sds-brand-100" },
+          "200":  { "$type": "color", "$figmaVariable": "Brand/200",  "$figmaVariableKey": "5ffe4f3c2c7166f7ee1c7eaa0e1fe3ccdce77ea7",  "$cssVar": "--sds-brand-200" },
+          "300":  { "$type": "color", "$figmaVariable": "Brand/300",  "$figmaVariableKey": "b77bf8908a3eebcc38d4ebf1eaf28f49a2841668",  "$cssVar": "--sds-brand-300" },
+          "400":  { "$type": "color", "$figmaVariable": "Brand/400",  "$figmaVariableKey": "020c16c784a2d93b9604779a6c2ff6c3f595603c",  "$cssVar": "--sds-brand-400" },
+          "500":  { "$type": "color", "$figmaVariable": "Brand/500",  "$figmaVariableKey": "eb7ed9ea0d13dca27c74bb996682b25f07e7b39c",  "$cssVar": "--sds-brand-500" },
+          "600":  { "$type": "color", "$figmaVariable": "Brand/600",  "$figmaVariableKey": "c0bf637c5d2155c05eb64b43207107f0ad8f688b",  "$cssVar": "--sds-brand-600" },
+          "700":  { "$type": "color", "$figmaVariable": "Brand/700",  "$figmaVariableKey": "a279dcad644c98d14b8aa898b4a49d715d2058db",  "$cssVar": "--sds-brand-700" },
+          "800":  { "$type": "color", "$figmaVariable": "Brand/800",  "$figmaVariableKey": "bebb099ba4e37c8f8ec3e5c5ea4146bbd83f4458",  "$cssVar": "--sds-brand-800" },
+          "900":  { "$type": "color", "$figmaVariable": "Brand/900",  "$figmaVariableKey": "b092a82a93ca5b8144ba1b72a6723d394c37e87f",  "$cssVar": "--sds-brand-900" },
+          "1000": { "$type": "color", "$figmaVariable": "Brand/1000", "$figmaVariableKey": "49c448bd0bc96472b8271cfe8d964504b7bbd819", "$cssVar": "--sds-brand-1000" }
+        },
+        "gray": {
+          "100":  { "$type": "color", "$figmaVariable": "Gray/100",  "$figmaVariableKey": "359511802d4ccbe7f4c6e357c93df4f0237a6245",  "$cssVar": "--sds-gray-100" },
+          "200":  { "$type": "color", "$figmaVariable": "Gray/200",  "$figmaVariableKey": "289de3aa3556f3e7357d3328aacf57a2fe04ba52",  "$cssVar": "--sds-gray-200" },
+          "300":  { "$type": "color", "$figmaVariable": "Gray/300",  "$figmaVariableKey": "ccfa8b20f9ff5b75d72185675c5a6b5e2986fba2",  "$cssVar": "--sds-gray-300" },
+          "400":  { "$type": "color", "$figmaVariable": "Gray/400",  "$figmaVariableKey": "cacacfbcea6aede69292232e70b87bc29c917da7",  "$cssVar": "--sds-gray-400" },
+          "500":  { "$type": "color", "$figmaVariable": "Gray/500",  "$figmaVariableKey": "269eda2b2ea927e10853cc1e53cfa126604efd43",  "$cssVar": "--sds-gray-500" },
+          "600":  { "$type": "color", "$figmaVariable": "Gray/600",  "$figmaVariableKey": "00c8fccbfa864ce3675eee9d9f0de19b7ab489dc",  "$cssVar": "--sds-gray-600" },
+          "700":  { "$type": "color", "$figmaVariable": "Gray/700",  "$figmaVariableKey": "80ea68a3c320ebe2a4eb4a34abfa65949c91dc76",  "$cssVar": "--sds-gray-700" },
+          "800":  { "$type": "color", "$figmaVariable": "Gray/800",  "$figmaVariableKey": "c3069fac31ea882692046011ac951ce7c2f3132b",  "$cssVar": "--sds-gray-800" },
+          "900":  { "$type": "color", "$figmaVariable": "Gray/900",  "$figmaVariableKey": "c4cea9b208ce9978e026d8577fb7e151cfe2c859",  "$cssVar": "--sds-gray-900" },
+          "1000": { "$type": "color", "$figmaVariable": "Gray/1000", "$figmaVariableKey": "88319847f52eed9ca7b32a828c502d3d9e120dcb", "$cssVar": "--sds-gray-1000" }
+        },
+        "red": {
+          "100": { "$type": "color", "$figmaVariable": "Red/100", "$figmaVariableKey": "fdf2bba580435e253fc7d7031dc3b5b2ebebfced", "$cssVar": "--sds-red-100" },
+          "500": { "$type": "color", "$figmaVariable": "Red/500", "$figmaVariableKey": "1a898f9e9d75a2152c837dac1f45ad366e5d9f83", "$cssVar": "--sds-red-500" },
+          "700": { "$type": "color", "$figmaVariable": "Red/700", "$figmaVariableKey": "750d0a1c4524526bb896766af295b03cfad78b74", "$cssVar": "--sds-red-700" }
+        },
+        "green": {
+          "100": { "$type": "color", "$figmaVariable": "Green/100", "$figmaVariableKey": "068508df3a0abc02c852d9824653c985b4684ddf", "$cssVar": "--sds-green-100" },
+          "500": { "$type": "color", "$figmaVariable": "Green/500", "$figmaVariableKey": "7f240ff6d989b8f0f76c60b15150538859d675bb", "$cssVar": "--sds-green-500" },
+          "700": { "$type": "color", "$figmaVariable": "Green/700", "$figmaVariableKey": "1e4979e175b197e08e8c14af1475356c5841b3ef", "$cssVar": "--sds-green-700" }
+        },
+        "yellow": {
+          "100": { "$type": "color", "$figmaVariable": "Yellow/100", "$figmaVariableKey": "4becaf198b2b800518784070efcdde8c53040b59", "$cssVar": "--sds-yellow-100" },
+          "500": { "$type": "color", "$figmaVariable": "Yellow/500", "$figmaVariableKey": "aea43fa7a0c2537952d0e9a1f009110b8432cd1b", "$cssVar": "--sds-yellow-500" },
+          "700": { "$type": "color", "$figmaVariable": "Yellow/700", "$figmaVariableKey": "712b22bce9982536d6028dcab011bfc24489ed5f", "$cssVar": "--sds-yellow-700" }
+        },
+        "blue": {
+          "100": { "$type": "color", "$figmaVariable": "Blue/100", "$figmaVariableKey": "98673396846fbb91f07b1d89328f704a6ee6e63b", "$cssVar": "--sds-blue-100" },
+          "500": { "$type": "color", "$figmaVariable": "Blue/500", "$figmaVariableKey": "fd2433cd15ab16ba9ce39d0f2d63cdda976e170d", "$cssVar": "--sds-blue-500" },
+          "700": { "$type": "color", "$figmaVariable": "Blue/700", "$figmaVariableKey": "c352bd4af14d2ea9af87a95272d14e1238811759", "$cssVar": "--sds-blue-700" }
+        },
+        "pink": {
+          "100": { "$type": "color", "$figmaVariable": "Pink/100", "$figmaVariableKey": "eafa0dddf68d4174c696bbc2812d2dba3699b442", "$cssVar": "--sds-pink-100" },
+          "500": { "$type": "color", "$figmaVariable": "Pink/500", "$figmaVariableKey": "2fda0ccd08985059b7da852d93942dfbcbeca00b", "$cssVar": "--sds-pink-500" },
+          "700": { "$type": "color", "$figmaVariable": "Pink/700", "$figmaVariableKey": "dc2b58a71f46b160a36b4328229982b0a1b3fd86", "$cssVar": "--sds-pink-700" }
+        }
+      },
+
+      "semantic": {
+        "$figmaCollection": "Color",
+        "$figmaModes": ["SDS Light", "SDS Dark"],
+        "background": {
+          "default":    { "default":   { "$figmaVariableKey": "e6e2b558dbb083dff6c352bef6850c289c0d3ee0", "$cssVar": "--sds-bg-default" },
+                          "secondary": { "$figmaVariableKey": "93008ec06cb1dd1c6dbd5df80dc6b040606fb854", "$cssVar": "--sds-bg-default-secondary" },
+                          "tertiary":  { "$figmaVariableKey": "c77aeddb76784735b96ac99675b46cd55a5db616", "$cssVar": "--sds-bg-default-tertiary" },
+                          "hover":     { "$figmaVariableKey": "17f5bfc06de8ffcb19ac6c8b3f1ccab2e199011b", "$cssVar": "--sds-bg-default-hover" } },
+          "brand":      { "default":         { "$figmaVariableKey": "a30f17ea98fbe43b15ca632750c6d8d4c508e9bc", "$cssVar": "--sds-bg-brand" },
+                          "secondary":       { "$figmaVariableKey": "4689336212a8b9ec1351ab6cd91b84ef796862f8", "$cssVar": "--sds-bg-brand-secondary" },
+                          "tertiary":        { "$figmaVariableKey": "af0b8849ca216ad3ecf21aac777c1dc53418f152", "$cssVar": "--sds-bg-brand-tertiary" },
+                          "hover":           { "$figmaVariableKey": "40b8a1ddf76d28805fb252fad7b1a5a5d18928f3", "$cssVar": "--sds-bg-brand-hover" },
+                          "secondaryHover":  { "$figmaVariableKey": "bfd201849e205d09e7d3f9a6298e823dafa32994", "$cssVar": "--sds-bg-brand-secondary-hover" },
+                          "tertiaryHover":   { "$figmaVariableKey": "58a6d38db39a90b40cca5b07c024a39fc2d51c09", "$cssVar": "--sds-bg-brand-tertiary-hover" } },
+          "positive":   { "default":   { "$figmaVariableKey": "7c15728c0f39ccf88224b89bfe66c304f6cf01ba", "$cssVar": "--sds-bg-positive" },
+                          "secondary": { "$figmaVariableKey": "90dde96dad29577d14337fa6f9e79ebd4029e556", "$cssVar": "--sds-bg-positive-secondary" },
+                          "hover":     { "$figmaVariableKey": "a9b951d413c4543b925815fe2e17ebb1dd2bab06", "$cssVar": "--sds-bg-positive-hover" } },
+          "warning":    { "default":   { "$figmaVariableKey": "992cd72f1dca67231e7ce29f73aa17266effa66e", "$cssVar": "--sds-bg-warning" },
+                          "secondary": { "$figmaVariableKey": "51e75bdad3c1ff49a8e860feb1051bf4996f1051", "$cssVar": "--sds-bg-warning-secondary" },
+                          "hover":     { "$figmaVariableKey": "42d33347495d284d0daa5077ad40d02827c15791", "$cssVar": "--sds-bg-warning-hover" } },
+          "danger":     { "default":   { "$figmaVariableKey": "18f8dcf191c29b7057fb1a25ac75c7c8af7e2bc9", "$cssVar": "--sds-bg-danger" },
+                          "secondary": { "$figmaVariableKey": "e5bd1c89331753757111e5b8d2aebce18866380b", "$cssVar": "--sds-bg-danger-secondary" },
+                          "hover":     { "$figmaVariableKey": "d08778f6924fcaeac5086f67bc370a2073e1f1cc", "$cssVar": "--sds-bg-danger-hover" } },
+          "neutral":    { "default":   { "$figmaVariableKey": "436b55dae5e63dc00977c6b83ad781bc8c866064", "$cssVar": "--sds-bg-neutral" },
+                          "secondary": { "$figmaVariableKey": "01743838fc8e6b00fb7d80160e87e1d6dc4653ab", "$cssVar": "--sds-bg-neutral-secondary" },
+                          "hover":     { "$figmaVariableKey": "c889c1704bd32075de911a287e050e0f56ad7ff4", "$cssVar": "--sds-bg-neutral-hover" } },
+          "disabled":   { "default":   { "$figmaVariableKey": "4e244e262b38b083b769f5786d4e71ad64ac4a86", "$cssVar": "--sds-bg-disabled" } },
+          "utilities":  { "scrim":     { "$figmaVariableKey": "109ec77ede4c64600ffb8b6d96da129c0647d0fe", "$cssVar": "--sds-bg-scrim" },
+                          "overlay":   { "$figmaVariableKey": "d28c968abaf3e397b96b3fa65e9f9a8a7b0c35a5", "$cssVar": "--sds-bg-overlay" },
+                          "blanket":   { "$figmaVariableKey": "28ae03cc65b7f7a83b8b4c474e8871fa0bb9e3fb", "$cssVar": "--sds-bg-blanket" } }
+        },
+        "text": {
+          "default":  { "default":   { "$figmaVariableKey": "26d441c895fb2a3dfa8e5558ba4ce4c1d55ab0cb", "$cssVar": "--sds-text-default" },
+                        "secondary": { "$figmaVariableKey": "4b75d81dd6ac1afd02bc49355f8054d21fb9e851", "$cssVar": "--sds-text-secondary" },
+                        "tertiary":  { "$figmaVariableKey": "0901e4a49f0622c43505cc301d8f18c8b013b9c6", "$cssVar": "--sds-text-tertiary" } },
+          "brand":    { "default":   { "$figmaVariableKey": "95a52732332ae39de06ad25a245918530bb518b8", "$cssVar": "--sds-text-brand" },
+                        "onBrand":   { "$figmaVariableKey": "9cb9d3a600b4f1c5e7df55131ec79ad4272bf469", "$cssVar": "--sds-text-on-brand" } },
+          "positive": { "default":   { "$figmaVariableKey": "ff0120bbe200815ebdeb177e194d64b10e19ae73", "$cssVar": "--sds-text-positive" },
+                        "onPositive":{ "$figmaVariableKey": "4af86e4d34ff3307ec7b8ef5b9aa9fe26218142d", "$cssVar": "--sds-text-on-positive" } },
+          "warning":  { "default":   { "$figmaVariableKey": "0604c9671fe05016c616876f627b447cf420410d", "$cssVar": "--sds-text-warning" },
+                        "onWarning": { "$figmaVariableKey": "b101cc182bcef59e3d0a36fa9843139615c59f13", "$cssVar": "--sds-text-on-warning" } },
+          "danger":   { "default":   { "$figmaVariableKey": "1c1ab95dd58305066a28538d7bbd602e6c425f45", "$cssVar": "--sds-text-danger" },
+                        "onDanger":  { "$figmaVariableKey": "54c8b068e544a682803ce9da2b9b460b61361c93", "$cssVar": "--sds-text-on-danger" } },
+          "disabled": { "default":   { "$figmaVariableKey": "048f8d767ce6120a6b265fc53ade899fa61537cf", "$cssVar": "--sds-text-disabled" },
+                        "onDisabled":{ "$figmaVariableKey": "575353043c04ca342c49f700493b5f8da9b16973", "$cssVar": "--sds-text-on-disabled" } }
+        },
+        "border": {
+          "default":  { "default":   { "$figmaVariableKey": "1edd938313702aecda380f23c024fdecc34e3b55", "$cssVar": "--sds-border-default" },
+                        "secondary": { "$figmaVariableKey": "c74d02360c0f545179d46e78d45cfee5b351ba18", "$cssVar": "--sds-border-secondary" } },
+          "brand":    { "default":   { "$figmaVariableKey": "45d77b4de5f9da65e9372f5c67554178fb7f9db2", "$cssVar": "--sds-border-brand" } },
+          "positive": { "default":   { "$figmaVariableKey": "f6ba92f3292dd8c76b39f54a5800086075b2544c", "$cssVar": "--sds-border-positive" } },
+          "warning":  { "default":   { "$figmaVariableKey": "bef4f92ebbb06ab86e59f4ba280c6bdfab278a5b", "$cssVar": "--sds-border-warning" } },
+          "danger":   { "default":   { "$figmaVariableKey": "5b34877d2263d028f8c56c965385b358bd8faab7", "$cssVar": "--sds-border-danger" } },
+          "disabled": { "default":   { "$figmaVariableKey": "35380726b6fa9a718d157d809545e9ba11ed9c79", "$cssVar": "--sds-border-disabled" } }
+        },
+        "icon": {
+          "default":  { "default":   { "$figmaVariableKey": "ec29df9b2b268b629b994592a8d5e9e763f0f647", "$cssVar": "--sds-icon-default" },
+                        "secondary": { "$figmaVariableKey": "080b57071c3410ba05893732072cba589175914d", "$cssVar": "--sds-icon-secondary" } },
+          "brand":    { "default":   { "$figmaVariableKey": "5e5043658e7dfa88129e0467323810eced57265b", "$cssVar": "--sds-icon-brand" },
+                        "onBrand":   { "$figmaVariableKey": "998f602f1704d26550da08d1f7868d387dfc679f", "$cssVar": "--sds-icon-on-brand" } },
+          "positive": { "default":   { "$figmaVariableKey": "163a9deaf83c4164cca439fff9377e933071a2cb", "$cssVar": "--sds-icon-positive" } },
+          "warning":  { "default":   { "$figmaVariableKey": "013d31e537e891259ff4fb2af56d720e370710bf", "$cssVar": "--sds-icon-warning" } },
+          "danger":   { "default":   { "$figmaVariableKey": "fcaff570db6ccdde9a1d47a9c837f97751fa30f8", "$cssVar": "--sds-icon-danger" } },
+          "disabled": { "default":   { "$figmaVariableKey": "fb6d6b76ba80119ad363e7aad3fd579ed9903b48", "$cssVar": "--sds-icon-disabled" } }
+        }
+      }
+    },
+
+    "typography": {
+      "$figmaFontFamily": "Inter",
+      "$figmaMonoFamily": "Roboto Mono",
+
+      "textStyles": {
+        "titleHero":       { "$figmaStyleKey": "48e74ff840826b0add17552dc03448984cb81da2", "$fontSize": 72,  "$fontWeight": 700, "$lineHeight": "120%", "$letterSpacing": "-3%", "$cssVar": "--sds-text-title-hero" },
+        "titlePage":       { "$figmaStyleKey": "bb19a17f261b98fb92c3a7f8726541a40867847d", "$fontSize": 48,  "$fontWeight": 700, "$lineHeight": "120%", "$letterSpacing": "-2%", "$cssVar": "--sds-text-title-page" },
+        "subtitle":        { "$figmaStyleKey": "18bb10194287b0d40bba45221b7a051834673d9c", "$fontSize": 32,  "$fontWeight": 400, "$lineHeight": "120%", "$cssVar": "--sds-text-subtitle" },
+        "heading":         { "$figmaStyleKey": "c796bdb76b98fad86a576524511f063655860a2a", "$fontSize": 24,  "$fontWeight": 600, "$lineHeight": "120%", "$letterSpacing": "-2%", "$cssVar": "--sds-text-heading" },
+        "subheading":      { "$figmaStyleKey": "2bb608a986da904c1ab5fc88dca52ab4c4d7d809", "$fontSize": 20,  "$fontWeight": 400, "$lineHeight": "120%", "$cssVar": "--sds-text-subheading" },
+        "bodyBase":        { "$figmaStyleKey": "7bca855b5f69173d2d3e1504522fa054e7482153", "$fontSize": 16,  "$fontWeight": 400, "$lineHeight": "140%", "$cssVar": "--sds-text-body" },
+        "bodyStrong":      { "$figmaStyleKey": "e280359a0afcf74d4aa089e29638c7efa6b04993", "$fontSize": 16,  "$fontWeight": 600, "$lineHeight": "140%", "$cssVar": "--sds-text-body-strong" },
+        "bodyEmphasis":    { "$figmaStyleKey": "cab7d5a630387560629f02a969431aafbd11ffe1", "$fontSize": 16,  "$fontWeight": 400, "$fontStyle": "italic", "$lineHeight": "140%", "$cssVar": "--sds-text-body-emphasis" },
+        "bodyLink":        { "$figmaStyleKey": "3e4acdf8c0d91fcdd34953ff80aac2d695917e78", "$fontSize": 16,  "$fontWeight": 400, "$lineHeight": "140%", "$cssVar": "--sds-text-body-link" },
+        "bodySmall":       { "$figmaStyleKey": "653c12f6d5cfbb84f5a53c0443e27905dfcd45a7", "$fontSize": 14,  "$fontWeight": 400, "$lineHeight": "140%", "$cssVar": "--sds-text-body-small" },
+        "bodySmallStrong": { "$figmaStyleKey": "ecfbc30c7149d3efdafceafdcb9b3a8a2f6f3b56", "$fontSize": 14,  "$fontWeight": 600, "$lineHeight": "140%", "$cssVar": "--sds-text-body-small-strong" },
+        "bodyCode":        { "$figmaStyleKey": "1b0a43c42e510ec624f8430216479a22b1ba2531", "$fontSize": 16,  "$fontWeight": 400, "$fontFamily": "Roboto Mono", "$lineHeight": "130%", "$cssVar": "--sds-text-body-code" }
+      },
+
+      "variables": {
+        "$figmaCollection": "Typography",
+        "titlePage":  { "family": { "$figmaVariableKey": "a99fe127b911ec7a3accc6a96a0558df51da722d" }, "weight": { "$figmaVariableKey": "81c07ef72c0d90f2fc4a4d5fbef228790921e34b" }, "sizeBase": { "$figmaVariableKey": "65a1ae3d213940038acb539aa772cd8d86035f78" } },
+        "subtitle":   { "family": { "$figmaVariableKey": "67104aee5d511e78e8dd120e53a9a2730be70107" }, "weight": { "$figmaVariableKey": "d8493606e716cdfee1fa2730cdc575de214f7afa" }, "sizeBase": { "$figmaVariableKey": "bc99a841c8db772eedc2e8c5eeb809785988677b" } },
+        "body":       { "family": { "$figmaVariableKey": "adce76cf4da9626792c005249f65516dc7786cce" }, "weightRegular": { "$figmaVariableKey": "acd4f118a86200fdc5a0ee0d9581538889f6c6f2" }, "sizeMedium": { "$figmaVariableKey": "0badf78d7aa0e1b70eb522a44bc1579e28e92963" } },
+        "heading":    { "family": { "$figmaVariableKey": "a739459b06856217a5dc3c354a77d2f0cc09aa8a" }, "weight": { "$figmaVariableKey": "7211548081909f3f220160d34e1f25e9f171a1ba" }, "sizeBase": { "$figmaVariableKey": "e2f2d77911a5cc20d80e6c384d2508afbc312c7f" } },
+        "code":       { "family": { "$figmaVariableKey": "1a5f23a2b474b11c02ff637a1b22c8f770d22b74" }, "weight": { "$figmaVariableKey": "37ef350ab82d7c5d5278d403cda28ad7003a7ac9" }, "sizeBase": { "$figmaVariableKey": "f64bac9a70370c38fa22975c0faa280d8720ea81" } },
+        "titleHero":  { "family": { "$figmaVariableKey": "a7ace635195329e73dcb1c6de94eb6a747d386eb" }, "weight": { "$figmaVariableKey": "14a18296e8ff816ce958b37b2b8f577d585c599e" }, "size": { "$figmaVariableKey": "682101d5de6ec62d5000f74594b66e3ddc4fd575" } }
+      },
+
+      "primitives": {
+        "$figmaCollection": "Typography Primitives",
+        "weights": {
+          "thin":       { "$figmaVariableKey": "8a3e7cf2533febe9ce0b10fc353ffa417fa3acff", "$value": 100 },
+          "extraLight": { "$figmaVariableKey": "983a13e5795a85f6a01eb0b1918d569c42738de6", "$value": 200 },
+          "light":      { "$figmaVariableKey": "dc15bc3fcdc739ceee92975c388c792028e32953", "$value": 300 },
+          "regular":    { "$figmaVariableKey": "ffd7bbf5575cfded23b1c402223b6ba8856ca0af", "$value": 400 },
+          "medium":     { "$figmaVariableKey": "b24e977bab6be660406b2892dfd7e2d73f8b52e1", "$value": 500 },
+          "semibold":   { "$figmaVariableKey": "8a499d1fed7466e6331948b303fa03279a527e27", "$value": 600 },
+          "bold":       { "$figmaVariableKey": "2997fbbfff99990381095fa8d92f9daadd91fe35", "$value": 700 },
+          "extraBold":  { "$figmaVariableKey": "9e7873e6f9c75ced182133bc0660e975f6d18468", "$value": 800 },
+          "black":      { "$figmaVariableKey": "1c00bd38ce226ecf363839934ea44689624fe208", "$value": 900 }
+        }
+      }
+    },
+
+    "spacing": {
+      "$figmaCollection": "Size",
+      "space": {
+        "100": { "$type": "dimension", "$figmaVariableKey": "6b289cff1cfad7ce29742bf9171934720f22e3c6", "$cssVar": "--sds-space-100" },
+        "200": { "$type": "dimension", "$figmaVariableKey": "e82a5e94d3ee09c9c64af68d9948e0da2245abf7", "$cssVar": "--sds-space-200" },
+        "300": { "$type": "dimension", "$figmaVariableKey": "451b626070b43d9a81c944d5b2556d143007218c", "$cssVar": "--sds-space-300" },
+        "400": { "$type": "dimension", "$figmaVariableKey": "1246cb4c5e815e26997329c3459d1d39cd676a35", "$cssVar": "--sds-space-400" },
+        "600": { "$type": "dimension", "$figmaVariableKey": "09af9b6482e59ee77f7e830f479e1d05c3685afe", "$cssVar": "--sds-space-600" },
+        "negative100": { "$type": "dimension", "$figmaVariableKey": "0041c769cdf6755f9d4f99f8f07470d7ed06b693", "$cssVar": "--sds-space-neg-100" },
+        "negative200": { "$type": "dimension", "$figmaVariableKey": "1d473727911f408c9eaf08265f6cbb01fdeee1ce", "$cssVar": "--sds-space-neg-200" },
+        "negative300": { "$type": "dimension", "$figmaVariableKey": "99ff874c776324f96dbbb267cd8afc2a9bf2a0e1", "$cssVar": "--sds-space-neg-300" },
+        "negative400": { "$type": "dimension", "$figmaVariableKey": "374189c4fbde1ec5b0beeb7db375c24af3be555e", "$cssVar": "--sds-space-neg-400" },
+        "negative600": { "$type": "dimension", "$figmaVariableKey": "50d62b13446404efddb3fc7caed61abe19ebda04", "$cssVar": "--sds-space-neg-600" }
+      },
+      "radius": {
+        "100": { "$type": "dimension", "$figmaVariableKey": "21593830f6f3c0abeb11378354fece26b7c10c67", "$cssVar": "--sds-radius-100" },
+        "200": { "$type": "dimension", "$figmaVariableKey": "58182912654e477abf9cdf4cd671dbb4d350cf6a", "$cssVar": "--sds-radius-200" },
+        "400": { "$type": "dimension", "$figmaVariableKey": "94abb087f339e2d880eb63b08abc171ad985c5f8", "$cssVar": "--sds-radius-400" }
+      },
+      "depth": {
+        "0":    { "$type": "number", "$figmaVariableKey": "ae089b3b2236677a5556d87adb377f8a65979a93", "$cssVar": "--sds-z-0" },
+        "025":  { "$type": "number", "$figmaVariableKey": "d9d1c57f7c9c0c620585509fba952e031f16313f", "$cssVar": "--sds-z-025" },
+        "100":  { "$type": "number", "$figmaVariableKey": "bf6920fd295c20a0e6e17623abd58b658d57a5fe", "$cssVar": "--sds-z-100" },
+        "200":  { "$type": "number", "$figmaVariableKey": "db91aaea9e1ae605cfe1299802ee03d15be10394", "$cssVar": "--sds-z-200" },
+        "400":  { "$type": "number", "$figmaVariableKey": "6017489cabe08b611489526cb9bcb3122ffe99fd", "$cssVar": "--sds-z-400" },
+        "800":  { "$type": "number", "$figmaVariableKey": "30f1daf34d970d0ae98795da0a0614e875662c8a", "$cssVar": "--sds-z-800" },
+        "1200": { "$type": "number", "$figmaVariableKey": "c119c9b9135ddba6b2f5f0560b6dcf405935f8d6", "$cssVar": "--sds-z-1200" }
+      }
+    },
+
+    "shadow": {
+      "$figmaCollection": "Effect Styles",
+      "dropShadow": {
+        "100": { "$figmaStyleKey": "9b43a398a9307552e2b4b394f1b1690dab79eb76", "$cssVar": "--sds-shadow-100" },
+        "200": { "$figmaStyleKey": "758432205913d8bee069d18b330f63087d6200f0", "$cssVar": "--sds-shadow-200" },
+        "300": { "$figmaStyleKey": "7a64d08acf554ecfc2dc4786c3157904419e6aca", "$cssVar": "--sds-shadow-300" },
+        "400": { "$figmaStyleKey": "626a483dd161b462bd55eade8e41c022da42d706", "$cssVar": "--sds-shadow-400" },
+        "500": { "$figmaStyleKey": "917e6903aaf01867ae1f1ad8b31b42b85e49f237", "$cssVar": "--sds-shadow-500" },
+        "600": { "$figmaStyleKey": "54d73f7b5f8a1582513b70a0bf3f9c2692097df1", "$cssVar": "--sds-shadow-600" }
+      },
+      "innerShadow": {
+        "100": { "$figmaStyleKey": "b8caf14703125ea0580d11f5b3a45dab828b68c0", "$cssVar": "--sds-inner-shadow-100" },
+        "200": { "$figmaStyleKey": "91091a298e935eecb2fb096f4c4cc94b0fb2bf68", "$cssVar": "--sds-inner-shadow-200" },
+        "300": { "$figmaStyleKey": "d3c6a6bb74d0eea8e7db0ab35334b64e220e404c", "$cssVar": "--sds-inner-shadow-300" },
+        "400": { "$figmaStyleKey": "e5f2958861dfb9bc31ed26c1aea8aaa6fa28ee8a", "$cssVar": "--sds-inner-shadow-400" },
+        "500": { "$figmaStyleKey": "d090f46be3a41509aa1f1c63380f07e9fe86ac26", "$cssVar": "--sds-inner-shadow-500" },
+        "600": { "$figmaStyleKey": "9ea98fac0ed2261d2872c0e93180bcc68c65d78e", "$cssVar": "--sds-inner-shadow-600" }
+      },
+      "blur": {
+        "overlay": { "$figmaStyleKey": "b95901561e6b12d7ebe65bfc1fae68e4d2729fa1", "$cssVar": "--sds-blur-overlay" },
+        "layer":   { "$figmaStyleKey": "baa4f9736bc0bdd2a6b7d7cdc2da8fac2afc9cd6", "$cssVar": "--sds-blur-layer" },
+        "glass":   { "$figmaStyleKey": "1260eabd6e54de97db874f7afce0346ce432426a", "$cssVar": "--sds-blur-glass" }
+      }
+    },
+
+    "responsive": {
+      "$figmaCollection": "Responsive",
+      "$figmaModes": ["Desktop", "Tablet", "Mobile"],
+      "deviceWidth":    { "$figmaVariableKey": "ac1e99545346384233e373c1997df539281fd694", "$cssVar": "--sds-device-width" },
+      "rootFontSize":   { "$figmaVariableKey": "c98c5147c50a579eb1c9d04bd4440d9a69845466", "$cssVar": "--sds-root-font-size" },
+      "scale":          { "$figmaVariableKey": "d24ddb5c59292ebe42d7bb4702015bb0cf6fcb0e", "$cssVar": "--sds-scale" }
+    }
+
+  },
+
+  "components": {
+    "$codePath": "@/components/ui",
+
+    "Accordion":    { "$figmaPage": "Accordion",    "$figmaComponent": "Accordion",             "$figmaNodeType": "COMPONENT",     "$figmaComponentKey": "1e49e2802374f87b01b1164ac3db8827be8265a0", "$codeComponent": "Accordion",    "$codePath": "@/components/ui/Accordion" },
+    "Avatar":       { "$figmaPage": "Avatars",      "$figmaComponent": "Avatar",                "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "9a1a72993b530357e185e7a1bae7dd57c267b6e7", "$codeComponent": "Avatar",       "$codePath": "@/components/ui/Avatar" },
+    "Button":       { "$figmaPage": "Buttons",      "$figmaComponent": "Button",                "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "1b7d41996cc93c3946140388541559ae18b49b19", "$codeComponent": "Button",       "$codePath": "@/components/ui/Button" },
+    "Calendar":     { "$figmaPage": "Calendar",     "$figmaComponent": "Calendar",              "$figmaNodeType": "COMPONENT",     "$figmaComponentKey": "944a8ae13319b25c698e745126be73e18b8c89d2", "$codeComponent": "Calendar",     "$codePath": "@/components/ui/Calendar" },
+    "Card":         { "$figmaPage": "Cards",        "$figmaComponent": "Card",                  "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "a1b2b425da3caffec5ffb3986ccd1c74b866c7d5", "$codeComponent": "Card",         "$codePath": "@/components/ui/Card" },
+    "Dialog":       { "$figmaPage": "Dialog",       "$figmaComponent": "Dialog",                "$figmaNodeType": "COMPONENT",     "$figmaComponentKey": "3d62176d1f5dee9a728e6478d4eca950dfccf740", "$codeComponent": "Dialog",       "$codePath": "@/components/ui/Dialog" },
+    "Input":        { "$figmaPage": "Inputs",       "$figmaComponent": "Input Field",           "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "57629308da7716042bff804e7a6eb0c3a297b1bf", "$codeComponent": "Input",        "$codePath": "@/components/ui/Input" },
+    "Menu":         { "$figmaPage": "Menu",         "$figmaComponent": "Menu",                  "$figmaNodeType": "COMPONENT",     "$figmaComponentKey": "0de81badf3638727f740200455a73ad8d376d215", "$codeComponent": "Menu",         "$codePath": "@/components/ui/Menu" },
+    "Navigation":   { "$figmaPage": "Navigation",   "$figmaComponent": "Navigation Button",     "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "20e348308138cb91bd31e168431c859f107443ca", "$codeComponent": "Navigation",   "$codePath": "@/components/layout/Navigation" },
+    "Notification": { "$figmaPage": "Notification", "$figmaComponent": "Notification",          "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "8785d91eace7de54f025b67a9d918f8e20e32bda", "$codeComponent": "Notification", "$codePath": "@/components/ui/Notification" },
+    "Pagination":   { "$figmaPage": "Pagination",   "$figmaComponent": "Pagination",            "$figmaNodeType": "COMPONENT",     "$figmaComponentKey": "2db8dc333a66e4014a900d2032282f54d2a7ee6c", "$codeComponent": "Pagination",   "$codePath": "@/components/ui/Pagination" },
+    "Tabs":         { "$figmaPage": "Tabs",         "$figmaComponent": "Tab",                   "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "b14ef47d6ae36b9f3d795aa262aec4afb7d95c43", "$codeComponent": "Tabs",         "$codePath": "@/components/ui/Tabs" },
+    "Tag":          { "$figmaPage": "Tags",         "$figmaComponent": "Tag",                   "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "ef833d3849aaf72072d4210d325e0a821f285c07", "$codeComponent": "Tag",          "$codePath": "@/components/ui/Tag" },
+    "Text":         { "$figmaPage": "Text",         "$figmaComponent": "Text Content Heading",  "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "1a3cde4036e66bfdbc1d8fa23e25340560e49219", "$codeComponent": "Text",         "$codePath": "@/components/ui/Text" },
+    "Tooltip":      { "$figmaPage": "Tooltip",      "$figmaComponent": "Tooltip",               "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "ada62e617d503c46e3685061f48170c15f2b5962", "$codeComponent": "Tooltip",      "$codePath": "@/components/ui/Tooltip" },
+    "AIChat":       { "$figmaPage": "AI Chat",      "$figmaComponent": "AI Chat Box",           "$figmaNodeType": "COMPONENT_SET", "$figmaComponentKey": "0bf2d8ddd1afa12494167b42fed8d18b4ede9b19", "$codeComponent": "AIChat",       "$codePath": "@/components/ui/AIChat" }
+  },
+
+  "modes": {
+    "light": { "$figmaCollection": "Color", "$figmaMode": "SDS Light" },
+    "dark":  { "$figmaCollection": "Color", "$figmaMode": "SDS Dark" }
+  },
+
+  "sync": {
+    "figmaFileId": "e2JTB9Amzu8JSWyBeCeFvz",
+    "outputDir": "./src/tokens",
+    "formats": ["css", "json", "ts"],
+    "platforms": {
+      "css":  { "outputFile": "tokens.css", "prefix": "--" },
+      "json": { "outputFile": "tokens.json" },
+      "ts":   { "outputFile": "tokens.ts", "exportAs": "const" }
+    }
+  },
+
+  "$gaps": {
+    "colorValues": "Color $value hex fields are not included — the Figma Variables API returns keys but not resolved values. Use the Figma file's Color page or a tool like Token Studio to export hex values.",
+    "spacingValues": "Space/Radius/Depth $value fields need to be populated from the Size page in your Figma file."
+  }
+}

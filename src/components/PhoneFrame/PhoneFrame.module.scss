@@ -1,0 +1,72 @@
+@use '../../styles/tokens' as *;
+
+// Desktop: show phone chrome
+.phone {
+  position: relative;
+  width: $phone-width;
+  height: $phone-height;
+  background-color: $color-bg-phone;
+  border-radius: $phone-radius;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+}
+
+.dynamicIsland {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: $dynamic-island-width;
+  height: $dynamic-island-height;
+  background-color: $color-bg-phone;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.screen {
+  position: absolute;
+  top: $screen-offset-y;
+  left: $screen-offset-x;
+  width: $screen-width;
+  height: $screen-height;
+  background-color: $color-bg-screen;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeIndicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: $dynamic-island-width + 14px;
+  height: 5px;
+  background-color: $color-white;
+  opacity: 0.18;
+  border-radius: 3px;
+}
+
+// Mobile: hide phone chrome, fill full screen
+@media (max-width: 767px) {
+  .phone {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .dynamicIsland,
+  .homeIndicator {
+    display: none;
+  }
+
+  .screen {
+    position: static;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}

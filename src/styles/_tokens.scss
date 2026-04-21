@@ -1,0 +1,64 @@
+// Design tokens extracted from Figma "Newsfeed PWA" design
+// Source: Figma file 94caEZQGpVHPkHnDItkOyK, node 12:2
+
+// Colors
+$color-bg-screen: #f9f9fa;
+$color-bg-phone: #1c1c1f;
+$color-bg-search: #eaeaed;
+$color-bg-thumbnail: #dadade;
+$color-divider: #e0e0e5;
+$color-text-primary: #111111;
+$color-text-publisher: #4f4f57;
+$color-text-meta: #87878f;
+$color-tab-active-border: #303030;
+$color-tab-active-text: #303030;
+$color-tab-inactive-border: #b2b2b2;
+$color-tab-inactive-text: #767676;
+$color-white: #ffffff;
+
+// Typography
+$font-family: 'Inter', sans-serif;
+
+$font-size-header-title: 26px;
+$font-weight-header-title: 700;
+$letter-spacing-header-title: -0.39px;
+
+$font-size-tab: 16px;
+$font-weight-tab: 400;
+
+$font-size-meta: 11px;
+$font-weight-meta-bold: 600;
+$font-weight-meta-regular: 400;
+
+$font-size-article-title: 15px;
+$font-weight-article-title: 600;
+$line-height-article-title: 1.38;
+
+$font-size-article-desc: 13px;
+$font-weight-article-desc: 400;
+$line-height-article-desc: 1.38;
+
+// Spacing
+$spacing-screen-edge: 16px;
+$spacing-header-x: 20px;
+$spacing-header-y: 12px;
+$spacing-article-pt: 16px;
+$spacing-article-pb: 32px;
+$spacing-article-gap: 12px;
+$spacing-meta-gap: 4px;
+
+// Dimensions
+$phone-width: 430px;
+$phone-height: 900px;
+$phone-radius: 52px;
+$screen-width: 390px;
+$screen-height: 844px;
+$screen-offset-x: 20px;
+$screen-offset-y: 28px;
+$thumbnail-size: 80px;
+$search-btn-size: 44px;
+$dynamic-island-width: 120px;
+$dynamic-island-height: 34px;
+$status-bar-height: 58px;
+$header-height: 76px;
+$tabs-height: 52px;
