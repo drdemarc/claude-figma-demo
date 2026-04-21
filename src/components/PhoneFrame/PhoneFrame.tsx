@@ -1,7 +1,8 @@
+import type { ReactNode } from 'react'
 import styles from './PhoneFrame.module.scss'
 
 interface PhoneFrameProps {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export function PhoneFrame({ children }: PhoneFrameProps) {

@@ -1,1 +1,0 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/articlecard/articlecard.tsx","./src/components/categorytabs/categorytabs.tsx","./src/components/header/header.tsx","./src/components/newsfeed/newsfeed.tsx","./src/components/phoneframe/phoneframe.tsx","./src/hooks/usenews.ts","./src/types/news.ts","./src/utils/time.ts"],"version":"5.9.3"}
