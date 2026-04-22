@@ -1,11 +1,20 @@
 import { useState, useEffect } from 'react'
 import type { Article, NewsResponse } from '../types/news'
 
-const API_KEY = import.meta.env.VITE_NEWSDATA_API_KEY
-const API_URL = `https://newsdata.io/api/1/latest?apikey=${API_KEY}&country=us&language=en&category=top&prioritydomain=top&image=1&removeduplicate=1`
+// In production, all users share a single CDN-cached response from /api/news.
+// The CDN cache has a 10-minute TTL, so Newsdata.io is called at most once per
+// 10-minute window regardless of traffic volume.
+//
+// In dev, there is no local API server, so we call Newsdata.io directly and use
+// a localStorage cache to avoid burning the 200 req/day quota during development.
+const IS_DEV = import.meta.env.DEV
+
+const FETCH_URL = IS_DEV
+  ? `https://newsdata.io/api/1/latest?apikey=${import.meta.env.VITE_NEWSDATA_API_KEY}&country=us&language=en&category=top&prioritydomain=top&image=1&removeduplicate=1`
+  : '/api/news'
 
 const CACHE_KEY = 'newsfeed:cache'
-const CACHE_TTL = 10 * 60 * 1000 // 10 minutes in ms
+const CACHE_TTL = 10 * 60 * 1000
 
 interface CacheEntry {
   articles: Article[]
@@ -25,7 +34,7 @@ function writeCache(articles: Article[]): void {
   try {
     localStorage.setItem(CACHE_KEY, JSON.stringify({ articles, fetchedAt: Date.now() }))
   } catch {
-    // Silently fail if localStorage is unavailable (private mode, quota exceeded)
+    // Silently fail — private mode or quota exceeded
   }
 }
 
@@ -44,29 +53,32 @@ export function useNews(): UseNewsResult {
     let cancelled = false
 
     async function fetchNews() {
-      // Serve from cache if it's still within the 10-minute window
-      const cached = readCache()
-      if (cached && Date.now() - cached.fetchedAt < CACHE_TTL) {
-        if (!cancelled) {
-          setArticles(cached.articles)
-          setLoading(false)
+      // Dev only: serve from localStorage if cache is still fresh
+      if (IS_DEV) {
+        const cached = readCache()
+        if (cached && Date.now() - cached.fetchedAt < CACHE_TTL) {
+          if (!cancelled) {
+            setArticles(cached.articles)
+            setLoading(false)
+          }
+          return
         }
-        return
       }
 
       try {
-        const res = await fetch(API_URL)
+        const res = await fetch(FETCH_URL)
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         const data: NewsResponse = await res.json()
         const results = data.results ?? []
-        writeCache(results)
+        if (IS_DEV) writeCache(results)
         if (!cancelled) {
           setArticles(results)
           setLoading(false)
         }
       } catch (err) {
         if (!cancelled) {
-          // Fall back to stale cache rather than showing an error
+          // Fall back to stale cache on failure rather than showing an error
+          const cached = readCache()
           if (cached) {
             setArticles(cached.articles)
           } else {
